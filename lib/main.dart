@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/routes/routes.dart';
+import 'package:flutter_catalog/screens/home.dart';
+import 'package:flutter_catalog/screens/login.dart';
+import 'package:flutter_catalog/widgets/themes.dart';
 
 void main() {
   runApp(MyWidget());
@@ -10,14 +14,17 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("Hello Sameer"),
-          ),
-        ),
-      ),
+      // home: HomePage(),
+      themeMode: ThemeMode.dark,
+      // debugShowCheckedModeBanner: false,
+      theme: MyTheme.lightTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
+      debugShowCheckedModeBanner: false,
+      routes: {
+        MyRoutes.homeRoute: (context) => LoginPage(),
+        MyRoutes.initialRoute: (context) => HomePage(),
+        MyRoutes.loginRoute: (context) => LoginPage(),
+      },
     );
   }
 }
-

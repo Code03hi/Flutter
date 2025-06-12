@@ -1,0 +1,36 @@
+//                     borderRadius: BorderRadius.circular(
+//                       changedButton ? 50 : 20,
+//                     ),
+
+//                                         shape: changedButton ? BoxShape.rectangle : BoxShape.circle,
+
+// ElevatedButton(
+//               onPressed: () {
+//                 Navigator.pushNamed(context, MyRoutes.homeRoute);
+//               },
+//               // style: ButtonStyle(
+//               //   backgroundColor: MaterialStateProperty.resolveWith<Color?>((
+//               //     Set<MaterialState> states,
+//               //   ) {
+//               //     if (states.contains(MaterialState.disabled))
+//               //       return Colors.red;
+//               //     return null;
+//               //   }),
+//               // ),
+//               style: TextButton.styleFrom(
+//                 minimumSize: Size(150, 50),
+//                 padding: EdgeInsetsGeometry.symmetric(
+//                   vertical: 10,
+//                   horizontal: 15,
+//                 ),
+//                 backgroundColor: Colors.white,
+//                 foregroundColor: Colors.black,
+//               ),
+//               child: Text(
+//                 "Login",
+//                 style: TextStyle(
+//                   fontSize: 18,
+//                   fontWeight: FontWeight.bold
+//                 ),
+//               ),
+//             ),
